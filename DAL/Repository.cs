@@ -99,13 +99,7 @@ namespace DAL
         }
 
         //*****************************************
-
-        //public System.Linq.IQueryable<T> Get(System.Linq.Expressions.Expression<System.Func<T,object>> expression = null)
-        //{
-        //    var allUsers = DbSet.Include(current=>current);
-        //    return (allUsers);
-        //} 
-
+            
         //This code Need to Impreove
         public virtual System.Collections.Generic.IEnumerable<T> Get(
            Expression<Func<T, bool>> filter = null,
@@ -134,14 +128,7 @@ namespace DAL
                 return query.ToList();
             }
         }
-
-
-        //public System.Linq.IQueryable<T> Get()
-        //{
-        //    var allEntity = DbSet.ToList();
-        //    return allEntity;
-        //}
-
+              
 
         //*****************************************
         public bool Save()
@@ -159,8 +146,17 @@ namespace DAL
         }
 
         //*****************************************
-        
 
-       
+        //public System.Linq.IQueryable<T> Get(System.Linq.Expressions.Expression<System.Func<T,object>> expression = null)
+        //{
+        //    var allUsers = DbSet.Include(current=>current);
+        //    return (allUsers);
+        //} 
+
+        //public System.Linq.IQueryable<T> Get()
+        //{
+        //    var allEntity = DbSet.ToList();
+        //    return allEntity;
+        //}
     }
 }
